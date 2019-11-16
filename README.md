@@ -11,7 +11,10 @@ POST https://api.tikhonov.im/register?email=EMAIL&password=PASSWORD
 
 ## Login
 ```
- POST https://api.tikhonov.im/login:
+ POST https://api.tikhonov.im/login
+```
+
+```
 JSON Body:
 
 {
@@ -22,7 +25,9 @@ JSON Body:
 ```
 
 ## Create user profile
+```
 POST: /api/user_profiles
+```
 
 ```
 {
@@ -30,5 +35,18 @@ POST: /api/user_profiles
 "organization": "test", 
 "avatar" : "test",
 "ownerId": "api/users/3"
+}
+```
+
+## Update user profile
+```
+localhost:8000/api/user_profiles/USER_ID
+```
+
+```
+{
+"name": "ttester12312", 
+"organization": "test", 
+"avatar" : "testwwwww"
 }
 ```
