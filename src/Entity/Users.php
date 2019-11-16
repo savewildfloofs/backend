@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @ApiResource()
+ * @ApiResource( itemOperations={"get"={"output"=false}}, collectionOperations={})
  * @ORM\Entity(repositoryClass="App\Repository\UsersRepository")
  */
 class Users implements UserInterface
