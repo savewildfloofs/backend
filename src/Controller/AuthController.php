@@ -38,7 +38,7 @@ class AuthController extends AbstractController
 
         $user = $this->usersRepository->createNewUser($newUserData);
 
-        return new Response(sprintf('User %s successfully created', $user->getUsername()));
+        return new Response(sprintf('User %s successfully created, id: %s', $user->getUsername(), $user->getId()));
     }
 
     /**
