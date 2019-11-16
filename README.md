@@ -6,12 +6,12 @@ Refer to the [Getting Started Guide](https://api-platform.com/docs/distribution)
 
 ## Register user
 ```
-POST https://api.tikhonov.im/register?email=EMAIL&password=PASSWORD
+POST /register?email=EMAIL&password=PASSWORD
 ```
 
 ## Login
 ```
- POST https://api.tikhonov.im/login
+ POST /login
 ```
 
 ```
@@ -40,7 +40,7 @@ POST: /api/user_profiles
 
 ## Update user profile
 ```
-localhost:8000/api/user_profiles/USER_ID
+/api/user_profiles/USER_ID
 ```
 
 ```
